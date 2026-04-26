@@ -19,11 +19,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Brand */}
           <div className="flex items-start gap-3">
-            <span className="mt-0.5 flex items-center justify-center w-8 h-8 rounded-md bg-accent/20 border border-accent/40 shrink-0">
+            {/* <span className="mt-0.5 flex items-center justify-center w-8 h-8 rounded-md bg-accent/20 border border-accent/40 shrink-0">
               <Cpu className="w-4 h-4 text-accent" aria-hidden />
-            </span>
+            </span>  */}
             <div>
-              <p className="text-sm font-bold tracking-tight">AutoNav Platform</p>
+              <p className="text-sm font-bold tracking-tight">M. A. N. T. I. S</p>
               <p className="text-xs text-primary-foreground/60 mt-0.5">Group 25-26J-497</p>
               <p className="text-xs text-primary-foreground/50 mt-1 max-w-xs leading-relaxed">
                 Research Capstone — SLAM, Meta-RL &amp; Multi-Robot Collaboration

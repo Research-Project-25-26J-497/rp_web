@@ -33,7 +33,7 @@ const members: Person[] = [
     avatar: '/mithila.jpeg',
     github: 'https://github.com/It22899224J',
     linkedin: 'https://www.linkedin.com/in/mithila-thilochana-b364362a0/',
-    email: 'thilochana@placeholder.com',
+    email: 'it22899224J@my.sliit.lk',
     bio: 'Responsible for the Meta-RL and SLAM obstacle-aware navigation engine, including the cloud-based inference server and the robot integration plugin for LiDAR data ingestion.',
   },
   {
@@ -43,7 +43,7 @@ const members: Person[] = [
     avatar: '/hirusha.jpeg',
     github: 'https://github.com/Hirusha-Chamod',
     linkedin: 'https://www.linkedin.com/in/sithum-senanayake-b11249239/',
-    email: 'jayarathne@placeholder.com',
+    email: 'it22311290@my.sliit.lk',
     bio: 'Leads the development of the Three.js and WebGL-based 3D visualisation platform for real-time rendering of SLAM-generated LiDAR point clouds over a cloud-edge architecture.',
   },
   {
@@ -53,7 +53,7 @@ const members: Person[] = [
     avatar: '/sithum.jpeg',
     github: 'https://github.com/sithum-senanayake',
     linkedin: 'https://www.linkedin.com/in/hirusha-chamod-954037259/',
-    email: 'senanayake@placeholder.com',
+    email: 'it22305282@my.sliit.lk',
     bio: 'Owns the multi-robot collaboration framework, implementing the ROS2 bridge, RESTful/WebSocket APIs, and Gazebo simulation environment for decentralised fleet coordination.',
   },
   {
@@ -63,7 +63,7 @@ const members: Person[] = [
     avatar: '/reshan.jpg',
     github: 'https://github.com/Reshan123',
     linkedin: 'https://www.linkedin.com/in/reshan-gomis-704b07248/',
-    email: 'reshangomis@gmail.com',
+    email: 'it22349606@my.sliit.lk',
     bio: 'Develops the isolated FastAPI microservice for automated synthetic LiDAR data generation, including dynamic environment hot-swapping in headless ROS2 simulations.',
   },
 ]

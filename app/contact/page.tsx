@@ -27,13 +27,13 @@ const contactDetails = [
   {
     icon: Mail,
     label: 'General Enquiries',
-    value: 'group497@placeholder.com',
-    href: 'mailto:group497@placeholder.com',
+    value: 'it22899224J@my.sliit.lk',
+    href: 'mailto:it22899224J@my.sliit.lk',
   },
   {
     icon: MapPin,
     label: 'Institution',
-    value: 'Faculty of Computing, Placeholder University, Sri Lanka',
+    value: 'Faculty of Computing, Sri Lanka Institute of Information Technology, Sri Lanka',
     href: '#',
   },
 ]

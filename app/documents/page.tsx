@@ -22,85 +22,70 @@ type Document = {
   version?: string
 }
 
-const categories = ['All', 'Proposals', 'Progress', 'Final', 'Research']
+const categories = ['All', 'Proposals', 'Presentation', 'Final', 'Research']
 
 const documents: Document[] = [
   {
     title: 'Project Charter',
     description: 'Official project initiation document outlining scope, objectives, stakeholders, and success criteria for the research capstone.',
     category: 'Proposals',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
+    file: '/TAF_25-26J-497.pdf',
     version: 'v1.0',
   },
   {
-    title: 'Project Proposal',
+    title: 'Project Proposal - Mithila',
     description: 'Detailed research proposal covering the problem statement, literature review, proposed methodology, and feasibility analysis.',
     category: 'Proposals',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
+    file: '/25-26J-497_IT22899224 - draft.pdf',
     version: 'v1.0',
   },
   {
-    title: 'TAP Presentation Slides',
-    description: 'Slides used during the Topic Approval Presentation to introduce the project concept to the evaluation panel.',
-    category: 'Progress',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
+    title: 'Project Proposal - Hirusha',
+    description: 'Detailed research proposal covering the problem statement, literature review, proposed methodology, and feasibility analysis.',
+    category: 'Proposals',
+    file: '/25-26J-497_IT22311290 - draft.pdf',
+    version: 'v1.0',
   },
   {
-    title: 'Progress Report 1',
-    description: 'First formal progress report documenting early implementation decisions, architecture diagrams, and updated project timelines.',
-    category: 'Progress',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
+    title: 'Project Proposal - Sithum',
+    description: 'Detailed research proposal covering the problem statement, literature review, proposed methodology, and feasibility analysis.',
+    category: 'Proposals',
+    file: '/25-26J-497_IT22305282 - draft.pdf',
+    version: 'v1.0',
+  },
+  {
+    title: 'Project Proposal - Reshan',
+    description: 'Detailed research proposal covering the problem statement, literature review, proposed methodology, and feasibility analysis.',
+    category: 'Proposals',
+    file: '/25-26J-497_IT22349606 - draft.pdf',
     version: 'v1.0',
   },
   {
     title: 'Progress Presentation 1 (PP1) Slides',
     description: 'Presentation deck for the first formal progress review session.',
-    category: 'Progress',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
+    category: 'Presentation',
+    file: '/PP1_25-26J-497 - PP1.pdf',
+  },
+  {
+    title: 'Progress Presentation 2 (PP2) Slides',
+    description: 'Presentation deck for the second formal progress review session.',
+    category: 'Presentation',
+    file: '/PP1_25-26J-497 - PP2.pdf',
   },
   {
     title: 'Research Paper',
     description: 'Peer-reviewed research paper submitted for the formal research publication component of the capstone.',
     category: 'Research',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
-    version: 'v1.0',
-  },
-  {
-    title: 'Progress Report 2',
-    description: 'Second progress report covering near-complete implementation, integration test results, and updated research findings.',
-    category: 'Progress',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
+    file: '/research_paper.pdf',
     version: 'v1.0',
   },
   {
     title: 'Final Document',
     description: 'Comprehensive final project documentation including complete system design, implementation details, results, and conclusions.',
     category: 'Final',
-    date: 'Placeholder Date',
     file: '/placeholder.pdf',
     version: 'v1.0',
-  },
-  {
-    title: 'Final Presentation Slides',
-    description: 'Presentation slides used during the final viva voce examination.',
-    category: 'Final',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
-  },
-  {
-    title: 'Project Poster',
-    description: 'A3/A2 research poster summarising the project for display at the project exhibition.',
-    category: 'Final',
-    date: 'Placeholder Date',
-    file: '/placeholder.pdf',
-  },
+  }
 ]
 
 const categoryColors: Record<string, string> = {
@@ -125,7 +110,6 @@ export default function DocumentsPage() {
           <SectionHeader
             eyebrow="Research Outputs"
             title="Documents & Reports"
-            description="All project documents are listed below. Download buttons link to placeholder PDF files — replace the files in the /public directory to update them."
           />
         </motion.div>
 
@@ -189,10 +173,6 @@ export default function DocumentsPage() {
                           {doc.version}
                         </span>
                       )}
-                      <span className="flex items-center gap-0.5 text-[10px] text-muted-foreground">
-                        <Calendar className="w-2.5 h-2.5" aria-hidden />
-                        {doc.date}
-                      </span>
                     </div>
                   </div>
                 </div>

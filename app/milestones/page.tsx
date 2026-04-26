@@ -19,9 +19,8 @@ const milestones = [
   {
     id: 'tap',
     phase: 'Phase 1',
-    label: 'Topic Approval Presentation (TAP)',
-    date: 'Placeholder Date',
-    marks: 'Placeholder Marks',
+    label: 'Topic Assessment Form (TAF)',
+    date: '30th June 2025',
     description:
       'Initial presentation to the evaluation panel to gain formal approval for the research topic and project scope. Assessment details will be added here once confirmed.',
     deliverables: [
@@ -35,8 +34,7 @@ const milestones = [
     id: 'pp',
     phase: 'Phase 1',
     label: 'Progress Presentation 1 (PP1)',
-    date: 'Placeholder Date',
-    marks: 'Placeholder Marks',
+    date: '05th Jan 2026',
     description:
       'First formal progress review demonstrating early-stage implementation and system design decisions. Assessment details will be added here once confirmed.',
     deliverables: [
@@ -47,26 +45,10 @@ const milestones = [
     ],
   },
   {
-    id: 'research-paper',
-    phase: 'Phase 1',
-    label: 'Research Paper Submission',
-    date: 'Placeholder Date',
-    marks: 'Placeholder Marks',
-    description:
-      'Submission of a formal research paper summarising the theoretical framework, experimental setup, and preliminary results. Assessment details will be added here once confirmed.',
-    deliverables: [
-      'Literature review and related work',
-      'Proposed system design',
-      'Experimental methodology',
-      'Preliminary results and analysis',
-    ],
-  },
-  {
     id: 'pp2',
     phase: 'Phase 2',
     label: 'Progress Presentation 2 (PP2)',
-    date: 'Placeholder Date',
-    marks: 'Placeholder Marks',
+    date: '09th March 206',
     description:
       'Second progress review covering a near-complete implementation with integration testing results. Assessment details will be added here once confirmed.',
     deliverables: [
@@ -77,11 +59,24 @@ const milestones = [
     ],
   },
   {
+    id: 'research-paper',
+    phase: 'Phase 1',
+    label: 'Research Paper Submission',
+    date: '08th May 2026',
+    description:
+      'Submission of a formal research paper summarising the theoretical framework, experimental setup, and preliminary results. Assessment details will be added here once confirmed.',
+    deliverables: [
+      'Literature review and related work',
+      'Proposed system design',
+      'Experimental methodology',
+      'Preliminary results and analysis',
+    ],
+  },
+  {
     id: 'final',
     phase: 'Phase 2',
     label: 'Final Presentation & Viva Voce',
-    date: 'Placeholder Date',
-    marks: 'Placeholder Marks',
+    date: '03rd May 2026',
     description:
       'Comprehensive final presentation and oral defence of the completed research project before the examination panel. Assessment details will be added here once confirmed.',
     deliverables: [
@@ -95,8 +90,7 @@ const milestones = [
     id: 'logbook',
     phase: 'Continuous',
     label: 'Logbook & Supervisor Evaluations',
-    date: 'Throughout Project',
-    marks: 'Placeholder Marks',
+    date: '03rd May 2026',
     description:
       'Ongoing assessment of individual contribution logs, weekly supervisor meetings, and formative feedback. Assessment details will be added here once confirmed.',
     deliverables: [
@@ -152,10 +146,6 @@ function AccordionItem({ item, index }: { item: (typeof milestones)[0]; index: n
             <span className="flex items-center gap-1 text-xs text-muted-foreground">
               <Calendar className="w-3 h-3" aria-hidden />
               {item.date}
-            </span>
-            <span className="flex items-center gap-1 text-xs text-muted-foreground">
-              <Star className="w-3 h-3" aria-hidden />
-              {item.marks}
             </span>
           </div>
           <p className="text-sm font-semibold text-foreground">{item.label}</p>

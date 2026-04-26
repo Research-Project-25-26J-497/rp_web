@@ -43,12 +43,12 @@ export default function Navigation() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group" aria-label="Go to homepage">
-          <span className="flex items-center justify-center w-8 h-8 rounded-md bg-accent/20 border border-accent/40 group-hover:bg-accent/30 transition-colors">
+          {/* <span className="flex items-center justify-center w-8 h-8 rounded-md bg-accent/20 border border-accent/40 group-hover:bg-accent/30 transition-colors">
             <Cpu className="w-4 h-4 text-accent" aria-hidden />
-          </span>
+          </span> */}
           <div className="flex flex-col leading-none">
             <span className="text-xs font-semibold text-white/60 tracking-widest uppercase">Group 25-26J-497</span>
-            <span className="text-sm font-bold text-white tracking-tight">AutoNav Platform</span>
+            <span className="text-sm font-bold text-white tracking-tight">M. A. N. T. I. S</span>
           </div>
         </Link>
 

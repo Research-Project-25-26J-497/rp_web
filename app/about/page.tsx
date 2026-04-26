@@ -30,9 +30,9 @@ const members: Person[] = [
     name: 'Thilochana J M',
     role: 'Group Member',
     module: 'Meta-RL & SLAM Adaptation Engine',
-    avatar: '/avatar-placeholder.jpg',
-    github: '#',
-    linkedin: '#',
+    avatar: '/mithila.jpeg',
+    github: 'https://github.com/It22899224J',
+    linkedin: 'https://www.linkedin.com/in/mithila-thilochana-b364362a0/',
     email: 'thilochana@placeholder.com',
     bio: 'Responsible for the Meta-RL and SLAM obstacle-aware navigation engine, including the cloud-based inference server and the robot integration plugin for LiDAR data ingestion.',
   },
@@ -40,9 +40,9 @@ const members: Person[] = [
     name: 'Jayarathne H C D',
     role: 'Group Member',
     module: '3D Mapping & Visualization Platform',
-    avatar: '/avatar-placeholder.jpg',
-    github: '#',
-    linkedin: '#',
+    avatar: '/hirusha.jpeg',
+    github: 'https://github.com/Hirusha-Chamod',
+    linkedin: 'https://www.linkedin.com/in/sithum-senanayake-b11249239/',
     email: 'jayarathne@placeholder.com',
     bio: 'Leads the development of the Three.js and WebGL-based 3D visualisation platform for real-time rendering of SLAM-generated LiDAR point clouds over a cloud-edge architecture.',
   },
@@ -50,9 +50,9 @@ const members: Person[] = [
     name: 'Senanayake S M A S N',
     role: 'Group Member',
     module: 'Multi-Robot Collaboration Framework',
-    avatar: '/avatar-placeholder.jpg',
-    github: '#',
-    linkedin: '#',
+    avatar: '/sithum.jpeg',
+    github: 'https://github.com/sithum-senanayake',
+    linkedin: 'https://www.linkedin.com/in/hirusha-chamod-954037259/',
     email: 'senanayake@placeholder.com',
     bio: 'Owns the multi-robot collaboration framework, implementing the ROS2 bridge, RESTful/WebSocket APIs, and Gazebo simulation environment for decentralised fleet coordination.',
   },
@@ -60,10 +60,10 @@ const members: Person[] = [
     name: 'Gomis R J S',
     role: 'Group Member',
     module: 'Synthetic Data Generation',
-    avatar: '/avatar-placeholder.jpg',
-    github: '#',
-    linkedin: '#',
-    email: 'gomis@placeholder.com',
+    avatar: '/reshan.jpg',
+    github: 'https://github.com/Reshan123',
+    linkedin: 'https://www.linkedin.com/in/reshan-gomis-704b07248/',
+    email: 'reshangomis@gmail.com',
     bio: 'Develops the isolated FastAPI microservice for automated synthetic LiDAR data generation, including dynamic environment hot-swapping in headless ROS2 simulations.',
   },
 ]
@@ -72,9 +72,9 @@ const supervisors: Person[] = [
   {
     name: 'Mr. Samadhi Rathnayake',
     role: 'Supervisor',
-    avatar: '/avatar-placeholder.jpg',
-    linkedin: '#',
-    email: 'supervisor@placeholder.com',
+    avatar: '/samadhi.jpg',
+    linkedin: 'https://www.linkedin.com/in/samadhi-chathuranga-rathnayake/',
+    email: 'samadhi.r@sliit.lk',
     bio: 'Research supervisor providing academic guidance, technical mentorship, and evaluation oversight throughout the project lifecycle.',
   },
   {
@@ -82,7 +82,7 @@ const supervisors: Person[] = [
     role: 'Co-Supervisor',
     avatar: '/avatar-placeholder.jpg',
     linkedin: '#',
-    email: 'cosupervisor@placeholder.com',
+    email: 'amila.al@sliit.lk',
     bio: 'Co-supervisor offering additional domain expertise and supporting the group with technical reviews and periodic progress assessments.',
   },
 ]
@@ -98,13 +98,13 @@ function PersonCard({ person, index }: { person: Person; index: number }) {
       className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-md hover:border-accent/40 transition-all flex flex-col"
     >
       {/* Avatar */}
-      <div className="relative h-48 bg-secondary/60 overflow-hidden">
+      <div className="relative h-60 bg-secondary/60 overflow-hidden">
         <Image
           src={person.avatar}
           alt={`Portrait of ${person.name}`}
           fill
-          className="object-cover"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className=" object-cover"
+          sizes="(max-width: 50px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
       </div>
 

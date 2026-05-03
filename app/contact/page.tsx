@@ -27,8 +27,8 @@ const contactDetails = [
   {
     icon: Mail,
     label: 'General Enquiries',
-    value: 'it22899224J@my.sliit.lk',
-    href: 'mailto:it22899224J@my.sliit.lk',
+    value: 'it22899224@my.sliit.lk',
+    href: 'mailto:it22899224@my.sliit.lk',
   },
   {
     icon: MapPin,

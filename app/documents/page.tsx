@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { FileText, Download, Calendar, Tag } from 'lucide-react'
 import SectionHeader from '@/components/SectionHeader'
+import { useState } from 'react'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -17,12 +18,13 @@ type Document = {
   title: string
   description: string
   category: string
-  date: string
+  date?: string
   file: string
   version?: string
 }
 
-const categories = ['All', 'Proposals', 'Presentation', 'Final', 'Research']
+// Added 'Checklists' to categories
+const categories = ['All', 'Proposals', 'Presentation', 'Final', 'Research', 'Checklists']
 
 const documents: Document[] = [
   {
@@ -85,6 +87,14 @@ const documents: Document[] = [
     category: 'Final',
     file: '/placeholder.pdf',
     version: 'v1.0',
+  },
+  // Added the new Checklist document here
+  {
+    title: '25-26J-497 Checklist1 Document',
+    description: 'Official checklist document for project tracking and requirements verification.',
+    category: 'Checklists',
+    file: '/25-26J-497_Checklist1.pdf',
+    version: 'v1.0',
   }
 ]
 
@@ -93,9 +103,8 @@ const categoryColors: Record<string, string> = {
   Progress: 'oklch(0.55 0.18 195)',
   Final: 'oklch(0.55 0.2 155)',
   Research: 'oklch(0.58 0.2 45)',
+  Checklists: 'oklch(0.60 0.17 110)', // Added a greenish-yellow color for Checklists
 }
-
-import { useState } from 'react'
 
 export default function DocumentsPage() {
   const [active, setActive] = useState('All')

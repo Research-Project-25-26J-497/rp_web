@@ -33,7 +33,7 @@ const members: Person[] = [
     avatar: '/mithila.jpeg',
     github: 'https://github.com/It22899224J',
     linkedin: 'https://www.linkedin.com/in/mithila-thilochana-b364362a0/',
-    email: 'it22899224J@my.sliit.lk',
+    email: 'it22899224@my.sliit.lk',
     bio: 'Responsible for the Meta-RL and SLAM obstacle-aware navigation engine, including the cloud-based inference server and the robot integration plugin for LiDAR data ingestion.',
   },
   {

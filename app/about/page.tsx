@@ -80,7 +80,7 @@ const supervisors: Person[] = [
   {
     name: 'Mr. Amila Alexander',
     role: 'Co-Supervisor',
-    avatar: '/avatar-placeholder.jpg',
+    avatar: '/alexander.jpeg',
     linkedin: '#',
     email: 'amila.al@sliit.lk',
     bio: 'Co-supervisor offering additional domain expertise and supporting the group with technical reviews and periodic progress assessments.',

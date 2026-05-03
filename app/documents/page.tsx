@@ -90,7 +90,7 @@ const documents: Document[] = [
   },
   // Added the new Checklist document here
   {
-    title: '25-26J-497 Checklist1 Document',
+    title: '25-26J-497 Checklist1',
     description: 'Official checklist document for project tracking and requirements verification.',
     category: 'Checklists',
     file: '/25-26J-497_Checklist1.pdf',

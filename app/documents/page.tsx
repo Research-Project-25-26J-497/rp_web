@@ -85,7 +85,7 @@ const documents: Document[] = [
     title: 'Final Document',
     description: 'Comprehensive final project documentation including complete system design, implementation details, results, and conclusions.',
     category: 'Final',
-    file: '/placeholder.pdf',
+    file: '/25-26J-497_Final_Thesis.pdf',
     version: 'v1.0',
   },
   // Added the new Checklist document here

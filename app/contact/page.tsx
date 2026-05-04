@@ -75,7 +75,17 @@ export default function ContactPage() {
       setErrors(errs)
       return
     }
-    // Non-functional: just show success state
+
+    const mailTo = 'it22899224@my.sliit.lk'
+    const subject = form.subject || 'Contact Form Message'
+    const body = [
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      '',
+      form.message,
+    ].join('\n')
+
+    window.location.href = `mailto:${mailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     setSubmitted(true)
   }
 
@@ -151,9 +161,9 @@ export default function ContactPage() {
                     <CheckCircle className="w-7 h-7 text-accent" aria-hidden />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground mb-1">Message received!</p>
+                    <p className="font-semibold text-foreground mb-1">Message ready to send!</p>
                     <p className="text-sm text-muted-foreground font-serif">
-                      Thank you for reaching out. We&apos;ll get back to you as soon as possible.
+                      Your default email client should open with the message prefilled. Review it in Outlook and send it when you are ready.
                     </p>
                   </div>
                   <button
